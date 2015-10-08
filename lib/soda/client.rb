@@ -4,17 +4,16 @@
 #
 # For more details, check out http://socrata.github.io/soda-ruby
 #
-
-require 'net/https'
-require 'uri'
-require 'json'
-require 'cgi'
-require 'hashie'
 require 'sys/uname'
-require 'soda/version'
 include Sys
 
 module SODA
+  require 'net/https'
+  require 'uri'
+  require 'json'
+  require 'cgi'
+  require 'hashie'
+
   class Client
     class << self
       def generate_user_agent

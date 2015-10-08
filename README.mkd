@@ -45,3 +45,7 @@ All the field names have built in getter methods since the objects are Hashie::M
 magnitude_response.first.number_of_stations   #=> "6"
 ```
 *Note that the return value is a string object.*
+
+## Producer
+
+A "Producer" is an object that allows us to actually add, remove or modify rows in Socrata. To do these operations, you simply need to get an instance of a Soda2Producer. This is similar to the earlier Soda2Consumer class with the addition CUD operations.

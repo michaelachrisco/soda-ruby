@@ -6,7 +6,7 @@ require 'webmock/test_unit'
 require 'mocha/test_unit'
 
 # NOTE: These tests are by no means exhaustive, they're just a start
-class SODATest < Test::Unit::TestCase
+class SODAClientTest < Test::Unit::TestCase
   DOMAIN = 'fakehost.socrata.com'
   APP_TOKEN = 'totallyfakenotrealapptoken'
   USER = 'fakeuser@socrata.com'
